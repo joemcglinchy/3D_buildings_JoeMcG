@@ -1,0 +1,190 @@
+<RasterType xsi:type='typens:RasterType' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.3'>
+	<Names xsi:type='typens:ArrayOfString'>
+		<String>RasterBuilder</String>
+		<String>Name</String>
+		<String>Aliases</String>
+		<String>Version</String>
+		<String>Description</String>
+		<String>InputDataSourceTypes</String>
+		<String>DataSourceFilter</String>
+		<String>SupportsOrthorectification</String>
+		<String>SupportsStereo</String>
+		<String>SupportsSeamline</String>
+		<String>EnableClipToFootprint</String>
+		<String>AllowSimplification</String>
+		<String>IsSensorRasterType</String>
+		<String>SupportsColorCorrection</String>
+		<String>FactoryCLSID</String>
+		<String>SupportedURIFilters</String>
+		<String>FullName</String>
+		<String>AddRastersParameters</String>
+		<String>SynchronizeParameters</String>
+	</Names>
+	<Values xsi:type='typens:ArrayOfAnyType'>
+		<AnyType xsi:type='typens:LasBuilder'>
+			<Names xsi:type='typens:ArrayOfString'>
+				<String>AuxiliaryFields</String>
+				<String>AuxiliaryFieldAlias</String>
+				<String>ParentRasterTypeName</String>
+				<String>Properties</String>
+				<String>MergeItems</String>
+				<String>LasToRasterArguments</String>
+				<String>FolderAsDataset</String>
+				<String>ZFactor</String>
+			</Names>
+			<Values xsi:type='typens:ArrayOfAnyType'>
+				<AnyType xsi:type='typens:Fields'>
+					<FieldArray xsi:type='typens:ArrayOfField'>
+						<Field xsi:type='typens:Field'>
+							<Name>Version</Name>
+							<Type>esriFieldTypeString</Type>
+							<IsNullable>true</IsNullable>
+							<Length>20</Length>
+							<Precision>0</Precision>
+							<Scale>0</Scale>
+							<AliasName>Version</AliasName>
+						</Field>
+						<Field xsi:type='typens:Field'>
+							<Name>PointCount</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<IsNullable>true</IsNullable>
+							<Length>0</Length>
+							<Precision>20</Precision>
+							<Scale>9</Scale>
+							<AliasName>Point Count</AliasName>
+						</Field>
+						<Field xsi:type='typens:Field'>
+							<Name>PointSpacing</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<IsNullable>true</IsNullable>
+							<Length>0</Length>
+							<Precision>20</Precision>
+							<Scale>9</Scale>
+							<AliasName>Point Spacing</AliasName>
+						</Field>
+						<Field xsi:type='typens:Field'>
+							<Name>ZMin</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<IsNullable>true</IsNullable>
+							<Length>0</Length>
+							<Precision>20</Precision>
+							<Scale>9</Scale>
+							<AliasName>ZMin</AliasName>
+						</Field>
+						<Field xsi:type='typens:Field'>
+							<Name>ZMax</Name>
+							<Type>esriFieldTypeDouble</Type>
+							<IsNullable>true</IsNullable>
+							<Length>0</Length>
+							<Precision>20</Precision>
+							<Scale>9</Scale>
+							<AliasName>ZMax</AliasName>
+						</Field>
+					</FieldArray>
+				</AnyType>
+				<AnyType xsi:type='typens:PropertySet'>
+					<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>Version</Key>
+							<Value xsi:type='xs:string'>Version</Value>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>PointCount</Key>
+							<Value xsi:type='xs:string'>PointCount</Value>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>PointSpacing</Key>
+							<Value xsi:type='xs:string'>PointSpacing</Value>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>ZMin</Key>
+							<Value xsi:type='xs:string'>ZMin</Value>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>ZMax</Key>
+							<Value xsi:type='xs:string'>ZMax</Value>
+						</PropertySetProperty>
+					</PropertyArray>
+				</AnyType>
+				<AnyType xsi:type='xs:string'>LAS</AnyType>
+				<AnyType xsi:type='typens:PropertySet'>
+					<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>BandProperties</Key>
+							<Value xsi:type='typens:ArrayOfArgument'/>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>DataType</Key>
+							<Value xsi:type='xs:string'>Elevation</Value>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>DefaultBandCount</Key>
+							<Value xsi:type='xs:int'>1</Value>
+						</PropertySetProperty>
+					</PropertyArray>
+				</AnyType>
+				<AnyType xsi:type='xs:boolean'>false</AnyType>
+				<AnyType xsi:type='typens:LasToRasterFunctionArguments'>
+					<Names xsi:type='typens:ArrayOfString'>
+						<String>CacheLocation</String>
+						<String>CacheMaxNumSurfaces</String>
+						<String>CellAggregationType</String>
+						<String>ClassTypesSelected</String>
+						<String>ReturnTypesSelected</String>
+						<String>DataType</String>
+						<String>UseTinning</String>
+						<String>MaxHoleWidthFilled</String>
+						<String>VoidFillMethod</String>
+						<String>CellWidth</String>
+					</Names>
+					<Values xsi:type='typens:ArrayOfAnyType'>
+						<AnyType xsi:type='typens:WorkspaceName'>
+							<PathName></PathName>
+							<WorkspaceFactoryProgID>esriDataSourcesRaster.RasterWorkspaceFactory.1</WorkspaceFactoryProgID>
+							<WorkspaceType>esriFileSystemWorkspace</WorkspaceType>
+						</AnyType>
+						<AnyType xsi:type='xs:int'>0</AnyType>
+						<AnyType xsi:type='xs:int'>3</AnyType>
+						<AnyType xsi:type='typens:ArrayOfInt'>
+							<Int>-1</Int>
+						</AnyType>
+						<AnyType xsi:type='typens:ArrayOfInt'>
+							<Int>-1</Int>
+						</AnyType>
+						<AnyType xsi:type='xs:int'>0</AnyType>
+						<AnyType xsi:type='xs:boolean'>false</AnyType>
+						<AnyType xsi:type='xs:double'>5</AnyType>
+						<AnyType xsi:type='xs:int'>2</AnyType>
+						<AnyType xsi:type='xs:double'>PUT_PIXEL_SIZE_HERE</AnyType>
+					</Values>
+				</AnyType>
+				<AnyType xsi:type='xs:boolean'>false</AnyType>
+				<AnyType xsi:type='xs:double'>1</AnyType>
+			</Values>
+		</AnyType>
+		<AnyType xsi:type='xs:string'>LAS_Template_Raster_Type</AnyType>
+		<AnyType xsi:type='typens:ArrayOfString'/>
+		<AnyType xsi:type='xs:int'>1</AnyType>
+		<AnyType xsi:type='xs:string'>Supports LIDAR (Light Detection and Ranging) data.</AnyType>
+		<AnyType xsi:type='xs:int'>3</AnyType>
+		<AnyType xsi:type='xs:string'/>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='typens:UID'>
+			<UID xsi:type='xs:string'>{8F2800F4-5842-47DF-AD1D-2077A7966BBF}</UID>
+		</AnyType>
+		<AnyType xsi:type='typens:ArrayOfArgument'/>
+		<AnyType xsi:type='typens:RasterTypeName'>
+			<Name>D:\YiqunXieInternshipSummary\tools_and_documentation\Feature Identification\fromBox\LAS_3_ALL_Binning_Mean_IDW.art.xml</Name>
+			<InstanceID>-1</InstanceID>
+			<MosaicDatasetName xsi:nil='true'/>
+		</AnyType>
+		<AnyType xsi:nil='true'/>
+		<AnyType xsi:nil='true'/>
+	</Values>
+</RasterType>
